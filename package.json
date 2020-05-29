@@ -1,0 +1,65 @@
+{
+  "name": "jethro",
+  "description": "Modular logging utility",
+  "version": "4.4.4",
+  "author": "Sam <6274020+henchmun@users.noreply.github.com>",
+  "bugs": {
+    "url": "https://github.com/JethroLogger/Jethro/issues"
+  },
+  "contributors": [
+    "Alex Pham <thedark1337@thedark1337.com>",
+    "Mathieu Samaey <yemasthui@gmail.com>",
+    "Nitro Ghost <wildeman.benjamin@gmail.com>"
+  ],
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "moment": "^2.24.0",
+    "strip-ansi": "^5.2.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "codecov": "^3.5.0",
+    "express": "^4.17.1",
+    "jsdoc": "^3.6.2",
+    "lolex": "^4.1.0",
+    "mocha": "^6.1.4",
+    "mocha-eslint": "^5.0.0",
+    "nyc": "^14.1.1",
+    "object-assign": "^4.1.1",
+    "supertest": "^4.0.2",
+    "tempy": "^0.3.0",
+    "test-console": "^1.1.0",
+    "unexpected": "^11.6.1"
+  },
+  "engines": {
+    "node": ">= 8.0"
+  },
+  "keywords": [
+    "automatic",
+    "database",
+    "file",
+    "intelligent",
+    "jethro",
+    "logger",
+    "logging",
+    "logs",
+    "socket"
+  ],
+  "files": [
+    "lib/",
+    "LGPLv3-license.txt",
+    "MIT-license.txt",
+    "yarn.lock"
+  ],
+  "license": "LGPL-3.0 AND MIT",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JethroLogger/Jethro"
+  },
+  "scripts": {
+    "test": "nyc mocha",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "docs": "jsdoc -c ./jsdoc.json"
+  }
+}

@@ -1,0 +1,27 @@
+version: "2"
+checks:
+  argument-count:
+    config:
+      threshold: 10
+  method-lines:
+    config:
+      threshold: 50
+  file-lines:
+    enabled: false
+  method-complexity:
+    enabled: false
+plugins:
+  duplication:
+    enabled: false
+  eslint:
+    enabled: true
+    channel: "eslint-4"
+  fixme:
+    enabled: true
+exclude_patterns:
+- coverage/
+- test/
+- docs/
+- examples/
+- node_modules/
+- out/

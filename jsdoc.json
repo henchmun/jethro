@@ -1,0 +1,25 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc","closure"]
+  },
+  "source": {
+    "includePattern": ".+\\.js$",
+    "excludePattern": "(^|\\/|\\\\)_",
+    "include": [
+      "lib/"
+    ],
+    "exclude": []
+  },
+  "opts": {
+    "destination": "../jethrologger.github.io/documentation/jethro-node",
+    "readme": "./README.md",
+    "recurse": true,
+    "verbose": true
+    },
+  "plugins": [],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  }
+}
